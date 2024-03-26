@@ -1,3 +1,9 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 nav{
     position: relative;
     display: flex;
@@ -5,8 +11,15 @@ nav{
     align-items: center;
 }
 
+.left-link a {
+    margin-left: 0;  
+    margin-right: 20px; 
+}
+
 .left-link{
-    margin: 20px;
+    position: absolute;
+    top: 18px;
+    text-indent: 20px;
 }
 
 .right-links a {
@@ -15,38 +28,29 @@ nav{
 
 .right-links{
     position: absolute;
-    top: 31px;
+    top: 22px;
     right: 20px;
 }
 
-.image-container{
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    overflow: hidden;
-    padding: 5px;
-    border: 2px solid black;
-    }
+.image{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-img {
+.image img {
     width: 100px; 
     height: 100px;
     border-radius: 50%;
     object-fit: cover;
     position: absolute;
-    top: 200%; 
+    top: 100%; 
     left: 50%; 
     transform: translateX(-50%); 
+    padding: 4px;
+    border: 2px solid #ccc;
 }
-
-
-
-
-
-
-
-
-
 
 @media (max-width: 768px) {
     nav {
