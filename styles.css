@@ -89,11 +89,33 @@ nav{
 .blue-bold{
     color: #40a1ff;
 }
+.me{
+    font-size: 30px;
+}
 .about{
     margin-left: 16%;
     margin-right: 40%;
     font-size: 28px;
 }
+.social-icons{
+    position: absolute;
+    top: 26%; 
+    left: 70%; 
+    transform: translateX(-50%);
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.Contact{
+    position: absolute;
+    top: 21.2%; 
+    left: 73%; 
+    transform: translateX(-50%);
+    font-size: 30px;
+}
+
+
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
